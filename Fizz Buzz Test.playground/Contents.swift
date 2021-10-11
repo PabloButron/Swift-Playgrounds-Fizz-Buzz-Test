@@ -1,11 +1,8 @@
 import UIKit
 import Darwin
 
-var greeting = "Hello, playground"
-
-
-
 func fizzbuzz (number:Int) -> String {
+   // the % symbol means no raminders of the division
     if number % 3 == 0  && number % 5  == 0 {
         return "fizz buzz"
     }
@@ -15,12 +12,11 @@ func fizzbuzz (number:Int) -> String {
   else if number % 5 == 0  {
       return "buzz"
     }
+    // The else is here to return the number in case of be non divisible 5 or 3
     else {
         return String(number)
  }
 }
-
-
 
 fizzbuzz(number : 3)
 fizzbuzz(number : 5)
